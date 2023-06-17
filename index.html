@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="just.css">
+    <script src="https://kit.fontawesome.com/ec910ce67a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-bar-div">
+            <!-- <div class="logo"> -->
+                <h3 class="logo">Weather App</h3>
+            <!-- </div> -->
+            <div class="div-nav">
+                <ul class="nav-bar-ul">
+                    <li class="nav-bar-li"><a href="#" class="nav-bar-a">Home</a></li>
+                    <li class="nav-bar-li"><a href="" class="nav-bar-a">About this App</a></li>
+                    <li class="nav-bar-li"><a href="" class="nav-bar-a">Usage Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search city..." class="search-box-it" id="searcht">
+                <button class="search-box-bt" id="searchb">
+                    Search
+                </button>
+            </div>
+
+            <div class="hamDiv do-hover" id="hams">
+                <i class="fa-solid fa-bars ham"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="drop-down active" id="drop1">
+
+        <div class="search-box1">
+            <input type="text" placeholder="Search city..." class="search-box-it" id="ds">
+            <button class="search-box-bt" id="db">
+                Search
+            </button>
+        </div>
+
+
+        <div class="dddiv">
+            <ul class="dd-ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">About this App</a></li>
+                <li><a href="">Usage Guide</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <h1 class="city-header" id="city-header">
+            Showing Weather For `pune`
+        </h1>
+
+
+        <div class="containers">
+
+            <div class="weather-box" id="weather-box1">
+                <div class="weather-box-header">
+                    <p class="weather-box-h3">Temperatures</p>
+                </div>
+
+                <div class="weather-box-content">
+                    <h3 class="weather-data-t">0 &#176;C</h3>
+                    <p class="weather-data-t">Temperature is 0</p>
+                    <p class="weather-data-t">Min Temperature is 0</p>
+                    <p class="weather-data-t">Max Temperature is 0</p>
+                </div>
+
+                <div class="c-but">
+                    <button class="weather-class-button do-hover" id="wb1">
+                        Sign up for free
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="weather-box" id="weather-box2">
+                <div class="weather-box-header">
+                    <p class="weather-box-h3">Humidity Info</p>
+                </div>
+
+
+                <div class="weather-box-content">
+                    <h3 class="hinfo">0 %</h3>
+                    <p class="hinfo">Wind Degree 0</p>
+                    <p class="hinfo">Feels Like 0</p>
+                    <p class="hinfo">Humidity is 0</p>
+                </div>
+
+                <div class="c-but">
+                    <button class="weather-class-button do-hover" id="wb2">
+                        Get Started
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="weather-box" id="weather-box3">
+                <div class="weather-box-header" id="weather-box-header3">
+                    <p class="weather-box-h3">Wind Info</p>
+                </div>
+
+                <div class="weather-box-content">
+                    <h3 class="winfo">0 Km/hr</h3>
+                    <p class="winfo">Wind Speed 0</p>
+                    <p class="winfo">Sunrise Time is 0</p>
+                    <p class="winfo">Sunset Time is 0</p>
+                </div>
+
+                <div class="c-but">
+                    <button class="weather-class-button do-hover" id="wb3">
+                        Contact Us
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="wea.js"></script>
+</body>
+
+</html>

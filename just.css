@@ -1,0 +1,966 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.do-hover:hover {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 1.4em;
+}
+
+.drop-down.active{
+    display: none;
+}
+
+
+/* test */
+@media (min-width:300px) and (max-width: 620px) {
+
+
+    .nav-bar {
+        background-color: rgb(245, 245, 245);
+        height: 60px;
+        font-family: "Poppins";
+    }
+
+    .drop-down{
+        background-color: rgb(245, 245, 245);
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .drop-down a{
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+    }
+
+    .drop-down a:hover{
+        cursor: pointer;
+        color: #1e90ff;
+    }
+
+    .drop-down ul{
+        list-style: none;
+    }
+
+    .drop-down li{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .div-nav{
+        display: none;
+    }
+
+    .nav-bar-div {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: space-between;
+        width: inherit;
+        margin: 0 10px;
+    }
+
+    .hamDiv{
+        padding-left: 150px;
+        font-size: 1.2em;
+    }
+
+    .logo {
+        font-size: 1.03em;
+    }
+    
+
+    .search-box{
+        display: none;
+    }
+
+    .search-box-it {
+        height: 33px;
+        width: 120px;
+        font-family: "Poppins";
+        font-size: 1em;
+        padding-left: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .search-box-it:focus {
+        border: 0px solid;
+    }
+
+    .search-box-bt {
+        height: 33px;
+        width: 100px;
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .search-box-bt {
+        cursor: pointer;
+    }
+
+
+    .main {
+        margin: 50px 10px;
+    }
+
+    .city-header {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+
+    .containers {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+
+    .weather-box {
+        height: 400px;
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .weather-box-header {
+        height: 50px;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #weather-box-header3 {
+        background-color: #1e90ff;
+        color: white
+    }
+
+    .weather-box-h3 {
+        text-align: center;
+    }
+
+    .weather-box-content {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather-box-content h3 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    .c-but {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .weather-class-button {
+        height: 43px;
+        width: 90%;
+        border-radius: 5px;
+        font-size: 1.1em;
+    }
+
+
+
+    #wb1 {
+        border: 1px solid #1e90ff;
+        color: #1e90ff;
+        background-color: transparent;
+    }
+
+    #wb2,
+    #wb3 {
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid black;
+    }
+}
+
+
+
+/* test */
+@media (min-width:620px) and (max-width: 750px) {
+
+
+    .nav-bar {
+        background-color: rgb(245, 245, 245);
+        height: 60px;
+        font-family: "Poppins";
+    }
+
+    .drop-down{
+        background-color: rgb(245, 245, 245);
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .drop-down a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.1em;
+    }
+
+    .drop-down a:hover{
+        cursor: pointer;
+        color: #1e90ff;
+    }
+
+    .drop-down ul{
+        list-style: none;
+    }
+
+    .drop-down li{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .div-nav{
+        display: none;
+    }
+
+    .nav-bar-div {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: space-between;
+        width: inherit;
+        margin: 0 10px;
+    }
+
+    .hamDiv{
+        padding-left: 150px;
+        font-size: 1.5em;
+    }
+
+    .logo {
+        font-size: 1.6em;
+    }
+    
+
+    .search-box{
+        display: none;
+    }
+
+    .search-box-it {
+        height: 33px;
+        width: 200px;
+        font-family: "Poppins";
+        font-size: 1.1em;
+        padding-left: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .search-box-it:focus {
+        border: 0px solid;
+    }
+
+    .search-box-bt {
+        height: 33px;
+        width: 110px;
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .search-box-bt {
+        cursor: pointer;
+    }
+
+
+    .main {
+        margin: 50px 100px;
+    }
+
+    .city-header {
+        text-align: center;
+        font-size: 2em;
+    }
+
+
+    .containers {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+
+    .weather-box {
+        height: 400px;
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .weather-box-header {
+        height: 50px;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #weather-box-header3 {
+        background-color: #1e90ff;
+        color: white
+    }
+
+    .weather-box-h3 {
+        text-align: center;
+    }
+
+    .weather-box-content {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather-box-content h3 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    .c-but {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .weather-class-button {
+        height: 43px;
+        width: 90%;
+        border-radius: 5px;
+        font-size: 1.1em;
+    }
+
+
+
+    #wb1 {
+        border: 1px solid #1e90ff;
+        color: #1e90ff;
+        background-color: transparent;
+    }
+
+    #wb2,
+    #wb3 {
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* test */
+@media (min-width:740px) and (max-width: 950px) {
+
+
+    .nav-bar {
+        background-color: rgb(245, 245, 245);
+        height: 60px;
+        font-family: "Poppins";
+    }
+
+    .nav-bar-ul {
+        display: none;
+    }
+
+
+    .drop-down{
+        background-color: rgb(245, 245, 245);
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .drop-down a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.1em;
+    }
+
+    .drop-down a:hover{
+        cursor: pointer;
+        color: #1e90ff;
+    }
+
+    .drop-down ul{
+        list-style: none;
+    }
+
+    .drop-down li{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+
+    .nav-bar-div {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: space-between;
+        width: inherit;
+        margin: 0 10px;
+    }
+
+    .hamDiv{
+        padding-left: 150px;
+        font-size: 1.5em;
+    }
+
+    .logo {
+        font-size: 1.6em;
+    }
+    
+
+    .search-box{
+        display: none;
+    }
+
+
+    .search-box-it {
+        height: 30px;
+        width: 200px;
+        font-family: "Poppins";
+        font-size: 1.1em;
+        padding-left: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .search-box-it:focus {
+        border: 0px solid;
+    }
+
+    .search-box-bt {
+        height: 33px;
+        width: 110px;
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .search-box-bt {
+        cursor: pointer;
+    }
+
+
+    .main {
+        margin: 50px 100px;
+    }
+
+    .city-header {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+
+    .containers {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+
+    .weather-box {
+        height: 400px;
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .weather-box-header {
+        height: 50px;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #weather-box-header3 {
+        background-color: #1e90ff;
+        color: white
+    }
+
+    .weather-box-h3 {
+        text-align: center;
+    }
+
+    .weather-box-content {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather-box-content h3 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    .c-but {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .weather-class-button {
+        height: 43px;
+        width: 90%;
+        border-radius: 5px;
+        font-size: 1.1em;
+    }
+
+
+
+    #wb1 {
+        border: 1px solid #1e90ff;
+        color: #1e90ff;
+        background-color: transparent;
+    }
+
+    #wb2,
+    #wb3 {
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:950px) and (max-width: 1100px) {
+
+    .nav-bar {
+        background-color: rgb(245, 245, 245);
+        height: 60px;
+        font-family: "Poppins";
+    }
+
+    .nav-bar-ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+    }
+
+    .drop-down{
+        display: none;
+    }
+
+    .nav-bar-a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1em;
+
+    }
+
+    .hamDiv{
+        display: none;
+    }
+
+
+    .nav-bar-a:hover {
+        color: #1e90ff;
+        cursor: pointer;
+    }
+
+
+    .nav-bar-div {
+        display: flex;
+        height: inherit;
+        margin: 0px 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .search-box-it {
+        height: 33px;
+        width: 200px;
+        font-family: "Poppins";
+        font-size: 1.1em;
+        padding-left: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .search-box-it:focus {
+        border: 0px solid;
+    }
+
+    .search-box-bt {
+        height: 33px;
+        width: 110px;
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .search-box-bt {
+        cursor: pointer;
+    }
+
+
+    .main {
+        margin: 50px 100px;
+    }
+
+    .city-header {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+
+    .containers {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+
+    .weather-box {
+        height: 400px;
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .weather-box-header {
+        height: 50px;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #weather-box-header3 {
+        background-color: #1e90ff;
+        color: white
+    }
+
+    .weather-box-h3 {
+        text-align: center;
+    }
+
+    .weather-box-content {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather-box-content h3 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    .c-but {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .weather-class-button {
+        height: 43px;
+        width: 90%;
+        border-radius: 5px;
+        font-size: 1.1em;
+    }
+
+
+
+    #wb1 {
+        border: 1px solid #1e90ff;
+        color: #1e90ff;
+        background-color: transparent;
+    }
+
+    #wb2,
+    #wb3 {
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid black;
+    }
+
+}
+
+
+@media (min-width:1100px) and (max-width: 10000px) {
+
+    .nav-bar {
+        background-color: rgb(245, 245, 245);
+        height: 60px;
+        font-family: "Poppins";
+    }
+
+    .nav-bar-ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+    }
+
+    .hamDiv{
+        display: none;
+    }
+
+    .drop-down{
+        display: none;
+    }
+
+    .nav-bar-a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1em;
+
+    }
+
+    .nav-bar-a:hover {
+        color: #1e90ff;
+        cursor: pointer;
+    }
+
+
+    .nav-bar-div {
+        display: flex;
+        height: inherit;
+        margin: 0px 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .search-box-it {
+        height: 33px;
+        width: 200px;
+        font-family: "Poppins";
+        font-size: 1.1em;
+        padding-left: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .search-box-it:focus {
+        border: 0px solid;
+    }
+
+    .search-box-bt {
+        height: 33px;
+        width: 110px;
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .search-box-bt {
+        cursor: pointer;
+    }
+
+
+    .main {
+        margin: 50px 100px;
+    }
+
+    .city-header {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+
+    .containers {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+
+    .weather-box {
+        height: 400px;
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .weather-box-header {
+        height: 50px;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #weather-box-header3 {
+        background-color: #1e90ff;
+        color: white
+    }
+
+    .weather-box-h3 {
+        text-align: center;
+    }
+
+    .weather-box-content {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather-box-content h3 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    .c-but {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .weather-class-button {
+        height: 43px;
+        width: 90%;
+        border-radius: 5px;
+        font-size: 1.1em;
+    }
+
+
+
+    #wb1 {
+        border: 1px solid #1e90ff;
+        color: #1e90ff;
+        background-color: transparent;
+    }
+
+    #wb2,
+    #wb3 {
+        background-color: #1e90ff;
+        color: white;
+        border: 0px solid black;
+    }
+
+}
